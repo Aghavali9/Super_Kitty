@@ -30,7 +30,7 @@ fi
 mkdir -p "$HOME/.local/bin"
 
 # Stow each package into the home directory
-PACKAGES=(zsh git config scripts)
+PACKAGES=(zsh config scripts)
 
 for pkg in "${PACKAGES[@]}"; do
   if [ -d "$DOTFILES_DIR/$pkg" ]; then
