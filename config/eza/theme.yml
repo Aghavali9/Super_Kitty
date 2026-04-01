@@ -1,0 +1,60 @@
+# eza theme configuration
+# Docs: https://github.com/eza-community/eza/blob/main/man/eza_colors-explanation.5.md
+
+# File kinds
+filekinds:
+  normal: default
+  directory: blue bold
+  symlink: cyan
+  pipe: yellow
+  block_device: yellow bold
+  char_device: yellow bold
+  socket: red
+  special: yellow
+  executable: green bold
+
+# File permissions
+permissions:
+  user_read:    yellow
+  user_write:   red
+  user_exec_file: green bold
+  user_exec_other: green
+  group_read:   yellow
+  group_write:  red
+  group_exec:   green
+  other_read:   yellow
+  other_write:  red
+  other_exec:   green
+  special_user_file: purple
+  special_other: purple
+  attribute: cyan
+
+# File sizes
+size:
+  major:   green bold
+  minor:   green
+  number_byte:   green
+  number_kilo:   green
+  number_mega:   yellow
+  number_giga:   red
+  number_huge:   red bold
+  unit_byte:     green
+  unit_kilo:     green
+  unit_mega:     yellow
+  unit_giga:     red
+  unit_huge:     red bold
+
+# Date / time
+date:
+  hour_old:    blue bold
+  day_old:     blue
+  older:       blue
+
+# Git status
+git:
+  new:         green
+  modified:    yellow
+  deleted:     red
+  renamed:     blue
+  ignored:     dark_grey
+  conflicted:  red bold

@@ -1,0 +1,44 @@
+[user]
+	# TODO: Replace with your actual name and email address
+	name = Your Name
+	email = your.email@example.com
+
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[push]
+	default = simple
+	autoSetupRemote = true
+
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = zebra
+
+[color]
+	ui = auto
+
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	lg = log --oneline --graph --decorate --all
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	aliases = config --get-regexp alias
+
+[credential]
+	helper = cache --timeout=3600
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
