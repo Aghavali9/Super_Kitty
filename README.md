@@ -10,9 +10,6 @@ dotfiles/
 ├── install.sh                   # Bootstrap script — installs stow and symlinks everything
 ├── zsh/                         # Zsh configuration  → ~/
 │   └── .zshrc
-├── git/                         # Git configuration  → ~/
-│   ├── .gitconfig
-│   └── .gitignore_global
 ├── config/                      # Tool configs       → ~/.config/
 │   ├── starship/
 │   │   └── starship.toml
@@ -35,7 +32,7 @@ bash install.sh
 `install.sh` will:
 1. Install **GNU Stow** if it isn't already present (supports apt, brew, pacman, dnf).
 2. Stow each package so that symlinks are created in the correct locations:
-   - `zsh/` and `git/` → `$HOME`
+   - `zsh/` → `$HOME`
    - `config/` → `$HOME` (so `config/kitty/kitty.conf` lands at `~/.config/kitty/kitty.conf`)
    - `scripts/` → `$HOME` (so scripts land in `~/.local/bin/`)
 
