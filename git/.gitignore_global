@@ -1,0 +1,59 @@
+# Global gitignore - applies to every repository on this machine
+
+# ----- OS generated files ----------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ----- Editor files ----------------------------------------------------------
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Emacs
+\#*\#
+.\#*
+
+# ----- Language / toolchain artifacts ----------------------------------------
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+env/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Rust
+target/
+
+# Go
+vendor/
+
+# ----- Misc ------------------------------------------------------------------
+*.log
+*.tmp
+.envrc
